@@ -1,0 +1,28 @@
+{
+  "name": "nautilus-calculus",
+  "version": "1.0.0",
+  "description": "Site que visa ensinar Matemática num processo minimalista, para que discalcúlicos e outros indivíduos com dificuldade na disciplina possam aprendê-la.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discalculia",
+    "matemática",
+    "nautilus-calculus",
+    "nautilus",
+    "calculus",
+    "node",
+    "node.js",
+    "react",
+    "react.js",
+    "aprendizado"
+  ],
+  "author": "Rafael Juliani Diehl",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "routes": "^2.1.0"
+  }
+}
