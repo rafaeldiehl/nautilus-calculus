@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Helmet from 'react-helmet';
 
-function CreateAccount() {
-    return(
-        <h1>Cadastro</h1>
-    )
+class CreateAccount extends Component {
+    render(){
+        return(
+            <div>
+                 <Helmet title="Criar conta • Nautilus Calculus" />
+             </div>
+        )
+    }
 };
 
 export default CreateAccount;

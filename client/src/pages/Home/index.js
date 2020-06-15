@@ -1,8 +1,13 @@
 import React from 'react';
+import Helmet from 'react-helmet';
+import Header from '../../components/Header';
 
 function Home() {
     return(
-        <h1>Página Inicial</h1>
+        <div>
+            <Helmet title="Nautilus Calculus • Aprenda Matemática de forma fácil!" />
+            <Header />
+        </div>
     )
 };
 

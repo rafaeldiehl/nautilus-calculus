@@ -1,8 +1,9 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 function Login() {
     return(
-        <h1>Entrar</h1>
+        <Helmet title="Entrar • Nautilus Calculus" />
     )
 };
 
