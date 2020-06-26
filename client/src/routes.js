@@ -15,7 +15,7 @@ function Routes() {
                 <Route exact path="/create-account" component={CreateAccount} />
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/learn" component={Learn} />
-                <Route exact path="/learn/exercises/greater-less-equal" component={Greaterlessequal} />
+                <Route exact path="/learn/greater-less-equal" component={Greaterlessequal} />
             </Switch>
         </BrowserRouter>
     );

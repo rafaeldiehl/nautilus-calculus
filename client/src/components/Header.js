@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Navbar from './Navbar.js';
 
-class Header extends Component {
-    render(){
-        return(
-            <header>
-                <h1>Nautilus Calculus</h1>
-                <p>Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. </p>
-            </header>
-        );
-    };
-};
+function Header() {
+    return(
+        <header>
+            <Navbar />
+        </header>
+    );
+}
 
 export default Header;
