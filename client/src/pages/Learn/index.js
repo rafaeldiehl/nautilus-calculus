@@ -3,7 +3,9 @@ import Helmet from 'react-helmet';
 
 function Learn() {
     return(
-        <Helmet title="Aprenda • Nautilus Calculus" />
+        <div>
+            <Helmet title="Aprenda • Nautilus Calculus" /> 
+        </div>
     )
 };
 
