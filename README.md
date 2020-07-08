@@ -5,7 +5,7 @@ git clone https://github.com/rafaeldiehl/nautilus.git
 ```
 Acesse o diretório do servidor 
 ```
-cd nautilus
+cd nautilus-calculus
 ```
 Instale as dependências do servidor (não está em uso no momento)
 ```
