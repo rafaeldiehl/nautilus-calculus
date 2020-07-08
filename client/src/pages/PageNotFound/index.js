@@ -15,7 +15,7 @@ function PageNotFound() {
                 <h1>ERRO <span>404</span></h1>
                 <h2>Página não encontrada :(</h2>
                 <p>O link solicitado não existe ou foi removido.</p>
-                <Link to={"/"}>Voltar para Home</Link>
+                <Link to={"/"}>Acessar a página principal</Link>
             </div>
         </div>
     )

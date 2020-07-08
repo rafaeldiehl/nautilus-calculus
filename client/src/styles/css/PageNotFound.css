@@ -26,8 +26,9 @@
       color: #303B5C; }
     .page-not-found > .content a {
       background-color: #cabdef;
-      padding: 10px 15px;
+      padding: 13px 18px;
       border-radius: 10px;
+      font-weight: 500;
       color: #fff; }
       .page-not-found > .content a:hover {
         background-color: #c0b1ec; }
