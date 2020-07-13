@@ -1,7 +1,6 @@
 import React from 'react';
 import Routes from './routes';
-import './styles/css/Reset.css';
-import './styles/css/GlobalStyles.css';
+import './styles/css/main.css';
 
 function App() {
   return(

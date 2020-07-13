@@ -19,3 +19,5 @@ function compilaSass() {
 function watch() {
     gulp.watch("src/styles/sass/**/*.scss", compilaSass)
 }
+
+// Rodar: node ./node_modules/gulp/bin/gulp.js
