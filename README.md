@@ -17,7 +17,7 @@ sudo apt install git
 ```
 Clone este repositório
 ```
-git clone https://github.com/rafaeldiehl/nautilus.git
+git clone https://github.com/rafaeldiehl/nautilus-calculus.git
 ```
 Acesse o diretório do servidor 
 ```

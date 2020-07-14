@@ -1,3 +1,8 @@
+/*
+*   Para rodar no terminal, use esse comando:
+*   $ node ./node_modules/gulp/bin/gulp.js
+*/
+
 'use strict';
 
 const gulp = require('gulp');
@@ -19,5 +24,3 @@ function compilaSass() {
 function watch() {
     gulp.watch("src/styles/sass/**/*.scss", compilaSass)
 }
-
-// Rodar: node ./node_modules/gulp/bin/gulp.js

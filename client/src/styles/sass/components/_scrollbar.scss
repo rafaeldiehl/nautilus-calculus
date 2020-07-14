@@ -1,0 +1,21 @@
+/*
+*   Só funciona em navegadores com webkit
+*/
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: $dark-grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $blue;
+    border-radius: 10px;
+    border: 3px solid $dark-grey;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $light-blue;
+}

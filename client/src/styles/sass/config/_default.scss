@@ -1,3 +1,7 @@
+/*
+* Tirando a formatação padrão do CSS
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,4 +54,19 @@ table {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+/* 
+* Estilização padrão
+*/
+
+body {
+  font-family: $font-primary;
+  font-size: $default-font-size;
+  color: $dark-grey;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  font-family: $font-secundary;
 }
