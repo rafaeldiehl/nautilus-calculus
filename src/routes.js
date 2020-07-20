@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import PageNotFound from './pages/404';
-import Home from './pages/home';
-import CreateAccount from './pages/create-account';
-import Login from './pages/login';
-import Learn from './pages/learn';
-import Exercises from './pages/Exercises/exercises';
-import GreaterLessEqual from './pages/Exercises/GreaterLessEqual/greater-less-equal';
+import Home from './pages/Home';
+import CreateAccount from './pages/CreateAccount';
+import Login from './pages/Login';
+import Learn from './pages/Learn';
+import Exercises from './pages/Learn/Exercises';
+import GreaterLessEqual from './pages/Learn/Exercises/GreaterLessEqual';
 
 function Routes() {
     return (

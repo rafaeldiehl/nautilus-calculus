@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 function GreaterLessEqual() {
     return(
         <div>
-            <h1>Maior, menor ou igual</h1>
+            <Helmet title="Maior, menor ou igual? • Nautilus Calculus" />
         </div>
     )
 };

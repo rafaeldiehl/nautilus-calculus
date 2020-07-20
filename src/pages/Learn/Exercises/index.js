@@ -5,7 +5,6 @@ function Exercises() {
     return(
         <div>
             <Helmet title="Exercícios • Nautilus Calculus" />
-            <h1>Testando</h1>
         </div>
     )
 };
