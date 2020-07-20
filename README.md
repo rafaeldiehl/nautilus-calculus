@@ -19,23 +19,15 @@ Clone este repositório
 ```
 git clone https://github.com/rafaeldiehl/nautilus-calculus.git
 ```
-Acesse o diretório do servidor 
+Acesse o diretório
 ```
 cd nautilus-calculus
 ```
-Instale as dependências do servidor (não está em uso no momento)
+Instale as dependências
 ```
 npm install
 ```
-Acesse o diretório do cliente
-```
-cd client
-```
-Instale as dependências do cliente
-```
-npm install
-```
-Inicie o cliente
+Inicie o sistema
 ```
 npm start
 ```
