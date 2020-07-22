@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/nautilus-calculus/static/js/main.c2f1b847.chunk.js",
-    "main.js.map": "/nautilus-calculus/static/js/main.c2f1b847.chunk.js.map",
+    "main.js": "/nautilus-calculus/static/js/main.2744ee67.chunk.js",
+    "main.js.map": "/nautilus-calculus/static/js/main.2744ee67.chunk.js.map",
     "runtime-main.js": "/nautilus-calculus/static/js/runtime-main.eb4a3c92.js",
     "runtime-main.js.map": "/nautilus-calculus/static/js/runtime-main.eb4a3c92.js.map",
-    "static/js/2.42fe64b7.chunk.js": "/nautilus-calculus/static/js/2.42fe64b7.chunk.js",
-    "static/js/2.42fe64b7.chunk.js.map": "/nautilus-calculus/static/js/2.42fe64b7.chunk.js.map",
+    "static/js/2.689ab34b.chunk.js": "/nautilus-calculus/static/js/2.689ab34b.chunk.js",
+    "static/js/2.689ab34b.chunk.js.map": "/nautilus-calculus/static/js/2.689ab34b.chunk.js.map",
     "index.html": "/nautilus-calculus/index.html",
-    "precache-manifest.59686e1a02dcfe2b2677999a6fef5537.js": "/nautilus-calculus/precache-manifest.59686e1a02dcfe2b2677999a6fef5537.js",
+    "precache-manifest.3f51094f5ceab35444a8d206e48b30dd.js": "/nautilus-calculus/precache-manifest.3f51094f5ceab35444a8d206e48b30dd.js",
     "service-worker.js": "/nautilus-calculus/service-worker.js",
-    "static/js/2.42fe64b7.chunk.js.LICENSE.txt": "/nautilus-calculus/static/js/2.42fe64b7.chunk.js.LICENSE.txt"
+    "static/js/2.689ab34b.chunk.js.LICENSE.txt": "/nautilus-calculus/static/js/2.689ab34b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.eb4a3c92.js",
-    "static/js/2.42fe64b7.chunk.js",
-    "static/js/main.c2f1b847.chunk.js"
+    "static/js/2.689ab34b.chunk.js",
+    "static/js/main.2744ee67.chunk.js"
   ]
 }
