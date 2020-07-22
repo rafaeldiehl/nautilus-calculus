@@ -1,14 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Helmet from 'react-helmet';
 
-class PageNotFound extends Component {
-    render() {
-        return(
-            <div>
-                <Helmet title="Página não encontrada • Nautilus Calculus" />
-            </div>
-        );
-    }
-};
+const PageNotFound = () => (
+  <div>
+    <Helmet title="Página não encontrada • Nautilus Calculus" />
+  </div>
+);
 
 export default PageNotFound;

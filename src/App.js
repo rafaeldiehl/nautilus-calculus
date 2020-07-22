@@ -1,17 +1,17 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import Routes from './routes';
 import GlobalStyle from './styles/globals';
 
 function App() {
-  return(
+  return (
     <div>
-      <BrowserRouter>
+      <HashRouter basename="/">
         <GlobalStyle />
         <Routes />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
-};
+}
 
 export default App;
