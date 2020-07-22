@@ -1,0 +1,17 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "EditorConfig.EditorConfig",
+        "esbenp.prettier-vscode",
+        "HookyQR.beautify",
+        "jonkwheeler.styled-components-snippets",
+        "jpoissonnier.vscode-styled-components",
+        "naumovs.color-highlight",
+        "PKief.material-icon-theme",
+        "ritwickdey.LiveServer",
+        "rocketseat.rocketseatreactjs",
+        "sporiley.css-auto-prefix",
+        "tinkertrain.theme-panda",
+        "vincaslt.highlight-matching-tag"
+    ]
+}
