@@ -12,8 +12,8 @@ export default createGlobalStyle`
         --hyper-light-blue: rgb(227, 248, 255);
         --semi-dark-blue: rgb(124,130,199);
 
-        --font-primary: 'Roboto', sans-serif;
-        --font-secundary: 'Raleway', sans-serif;
+        --font-primary: 'Open Sans', sans-serif;
+        --font-secundary: 'Roboto', sans-serif;
         --default-font-size: 1.4em;
 
         --l-900: 56.25em; //900px
@@ -82,8 +82,6 @@ export default createGlobalStyle`
     }
 
     h1, h2, h3, h4, h5, h6 {
-        font-weight: 600;
-        font-family: var(--font-secundary);
+        font-weight: 700;
     }
 `;
-
