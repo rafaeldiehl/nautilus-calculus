@@ -1,4 +1,4 @@
-![](https://i.imgur.com/NpHRzTB.jpg)
+![Nautilus Calculus](./.github/logo.jpeg)
 
 <hr>
 
