@@ -19,10 +19,10 @@ function Home() {
       <Helmet>
         <title>Nautilus Calculus</title>
       </Helmet>
+      <header className="home-page-header">
+        <Navbar />
+      </header>
       <section className="main-content" style={sectionBackground}>
-        <header className="home-page-header">
-          <Navbar />
-        </header>
         <main className="home-page-main">
           <header className="main-header">
             <h1>

@@ -94,14 +94,6 @@ nav.main-navbar {
         justify-content: space-between;
         padding: 0 3rem;
 
-        h1.main-logo {
-            a {
-                img {
-                    
-                }
-            }
-        }
-    
         ul {
             display: none;
             position: absolute;
@@ -181,5 +173,14 @@ nav.main-navbar {
             display:  block;
             font-size: 1rem;
         }
+    }
+}
+
+@media (max-width: 500px) {
+    nav.main-navbar {
+        position: relative;
+        background: $dark-grey;
+        justify-content: space-between;
+        padding: 0 1.3rem;
     }
 }
