@@ -1,0 +1,27 @@
+@import '../../assets/styles/main';
+
+button.btn {
+    margin: 0;
+    border: none;
+    outline: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.1rem;
+    color: white;
+    background: linear-gradient(to right, $blue-green, $semi-dark-blue);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+
+    &:hover {
+        &:hover {
+            background-position: 10.1rem;
+            transition: .7s;
+            -webkit-transition: .7s;
+            -moz-transition: .7s;
+            -ms-transition: .7s;
+            -o-transition: .7s;
+        }
+    }
+}

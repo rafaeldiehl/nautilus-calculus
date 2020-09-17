@@ -1,0 +1,185 @@
+@import '../../assets/styles/main';
+
+nav.main-navbar {
+    background: $dark-grey;
+    height: 75px;
+    @include flex(row);
+    justify-content: space-around;
+    color: $platinum;
+
+    h1.main-logo {
+        a {
+            img {
+                height: 3.3rem;
+            }
+        }
+    }
+
+    ul {
+        @include flex(row);
+
+        li {
+            font-size: 1rem;
+            font-weight: 400;
+            a {
+                @include flex(row);
+                padding: 1.77rem 0.8rem;
+                margin: 0 0.2rem;
+            }
+        }
+    }
+
+    ul.main-topics {
+        a.main-topic {
+            &:hover {
+                margin-top: -0.1rem;
+                border-bottom: solid;
+                border-image-slice: 1;
+                border-width: 3px;
+                border-image-source: linear-gradient(to right, $blue-green, $semi-dark-blue);
+                color: white;
+                transition: margin-top .2s;
+                -webkit-transition: margin-top .2s;
+                -moz-transition: margin-top .2s;
+                -ms-transition: margin-top .2s;
+                -o-transition: margin-top .2s;
+            }
+        }
+    }
+
+    ul.account-options {
+        a.login {
+            padding: 0 25px;
+
+            &:hover {
+                color: white;
+                transition: .2s;
+                -webkit-transition: .2s;
+                -moz-transition: .2s;
+                -ms-transition: .2s;
+                -o-transition: .2s;
+            }
+        }
+
+        a.create-account {
+            color: white;
+            background: linear-gradient(to right, $blue-green, $semi-dark-blue);
+            padding: 10px 18px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+
+            &:hover {
+                background-position: 7.25rem;
+                transition: .7s;
+                -webkit-transition: .7s;
+                -moz-transition: .7s;
+                -ms-transition: .7s;
+                -o-transition: .7s;
+            }
+        }
+    }
+
+    .icon {
+        display:  none;
+    }
+}
+
+@media (max-width: 740px) {
+    nav.main-navbar {
+        position: relative;
+        background: $dark-grey;
+        justify-content: space-between;
+        padding: 0 3rem;
+
+        h1.main-logo {
+            a {
+                img {
+                    
+                }
+            }
+        }
+    
+        ul {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 4.7rem;
+            flex-direction: column;
+            background: $dark-grey;
+            width: 100vw;
+    
+            li {
+                box-sizing: padding-box;
+                margin-left: -0.4rem;
+                width: 100vw;
+
+                a {
+                    padding: 1rem;
+                    background: $dark-grey;
+                    width: 100vw;
+                    box-sizing: border-box;
+                }
+            }
+        }
+
+        ul.select {
+            display: block;
+        }
+    
+        ul.main-topics {
+            a.main-topic {
+                &:hover {
+                    margin-top: 0;
+                    border: none;
+                    background: $semi-dark-grey;
+                }
+            }
+        }
+    
+        ul.account-options {
+            top: 13.7rem;
+            li.login-li {
+                padding-top: 1.3rem;
+                background: $dark-grey;
+
+                a.login {
+                    padding: 1rem;
+                    background: $dark-grey;
+    
+                    &:hover {
+                        background: $semi-dark-grey;
+                    }
+                }
+        
+            }
+            
+            a.create-account {
+                padding: 1rem;
+                background: $dark-grey;
+                border-radius: 0px;
+                -webkit-border-radius: 0px;
+                -moz-border-radius: 0px;
+                -ms-border-radius: 0px;
+                -o-border-radius: 0px;
+
+                
+                &:hover {
+                    background: $semi-dark-grey;
+                    transition: 0s;
+                    -webkit-transition: 0s;
+                    -moz-transition: 0s;
+                    -ms-transition: 0s;
+                    -o-transition: 0s;
+                }
+            }
+        }
+    
+        .icon {
+            display:  block;
+            font-size: 1rem;
+        }
+    }
+}
