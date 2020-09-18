@@ -1,19 +1,24 @@
 {
   "files": {
-    "main.js": "/nautilus-calculus/static/js/main.2744ee67.chunk.js",
-    "main.js.map": "/nautilus-calculus/static/js/main.2744ee67.chunk.js.map",
+    "main.css": "/nautilus-calculus/static/css/main.edb6607c.chunk.css",
+    "main.js": "/nautilus-calculus/static/js/main.f2266f4c.chunk.js",
+    "main.js.map": "/nautilus-calculus/static/js/main.f2266f4c.chunk.js.map",
     "runtime-main.js": "/nautilus-calculus/static/js/runtime-main.eb4a3c92.js",
     "runtime-main.js.map": "/nautilus-calculus/static/js/runtime-main.eb4a3c92.js.map",
-    "static/js/2.689ab34b.chunk.js": "/nautilus-calculus/static/js/2.689ab34b.chunk.js",
-    "static/js/2.689ab34b.chunk.js.map": "/nautilus-calculus/static/js/2.689ab34b.chunk.js.map",
+    "static/js/2.17515787.chunk.js": "/nautilus-calculus/static/js/2.17515787.chunk.js",
+    "static/js/2.17515787.chunk.js.map": "/nautilus-calculus/static/js/2.17515787.chunk.js.map",
     "index.html": "/nautilus-calculus/index.html",
-    "precache-manifest.3f51094f5ceab35444a8d206e48b30dd.js": "/nautilus-calculus/precache-manifest.3f51094f5ceab35444a8d206e48b30dd.js",
+    "precache-manifest.f30529a291c9d023b3fec656b729d86b.js": "/nautilus-calculus/precache-manifest.f30529a291c9d023b3fec656b729d86b.js",
     "service-worker.js": "/nautilus-calculus/service-worker.js",
-    "static/js/2.689ab34b.chunk.js.LICENSE.txt": "/nautilus-calculus/static/js/2.689ab34b.chunk.js.LICENSE.txt"
+    "static/css/main.edb6607c.chunk.css.map": "/nautilus-calculus/static/css/main.edb6607c.chunk.css.map",
+    "static/js/2.17515787.chunk.js.LICENSE.txt": "/nautilus-calculus/static/js/2.17515787.chunk.js.LICENSE.txt",
+    "static/media/homePageBackground.jpg": "/nautilus-calculus/static/media/homePageBackground.bba83a21.jpg",
+    "static/media/logoMedium.png": "/nautilus-calculus/static/media/logoMedium.4b51ec69.png"
   },
   "entrypoints": [
     "static/js/runtime-main.eb4a3c92.js",
-    "static/js/2.689ab34b.chunk.js",
-    "static/js/main.2744ee67.chunk.js"
+    "static/js/2.17515787.chunk.js",
+    "static/css/main.edb6607c.chunk.css",
+    "static/js/main.f2266f4c.chunk.js"
   ]
 }
