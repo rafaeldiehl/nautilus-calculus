@@ -16,7 +16,7 @@ button.btn {
 
     &:hover {
         &:hover {
-            background-position: 10.1rem;
+            background: linear-gradient(to right, darken($blue-green, 6%), darken($semi-dark-blue, 6%));
             transition: .7s;
             -webkit-transition: .7s;
             -moz-transition: .7s;

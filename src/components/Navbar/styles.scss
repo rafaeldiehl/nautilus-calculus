@@ -1,11 +1,14 @@
 @import '../../assets/styles/main';
 
 nav.main-navbar {
+    position: fixed;
+    width: 100%;
     background: $dark-grey;
     height: 75px;
     @include flex(row);
     justify-content: space-around;
     color: $platinum;
+    box-sizing: border-box;
 
     h1.main-logo {
         a {
@@ -72,7 +75,7 @@ nav.main-navbar {
             -o-border-radius: 5px;
 
             &:hover {
-                background-position: 7.25rem;
+                background: linear-gradient(to right, darken($blue-green, 6%), darken($semi-dark-blue, 6%));
                 transition: .7s;
                 -webkit-transition: .7s;
                 -moz-transition: .7s;
@@ -89,7 +92,7 @@ nav.main-navbar {
 
 @media (max-width: 740px) {
     nav.main-navbar {
-        position: relative;
+        position: fixed;
         background: $dark-grey;
         justify-content: space-between;
         padding: 0 3rem;
@@ -178,7 +181,6 @@ nav.main-navbar {
 
 @media (max-width: 500px) {
     nav.main-navbar {
-        position: relative;
         background: $dark-grey;
         justify-content: space-between;
         padding: 0 1.3rem;

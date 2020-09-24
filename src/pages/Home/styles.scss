@@ -2,10 +2,14 @@
 
 div#home-page {
     section.main-content {
+        height: 100vh;
         background-size: cover;
+        display: flex;
+        align-items: center;
 
         main.home-page-main {
             color: white;
+            margin-top: 75px;
             height: calc(100vh - 75px);
             width: 33rem;
             margin-left: 15%;
@@ -26,24 +30,8 @@ div#home-page {
                     text-align: left;
                     margin: 1.6rem 0 2rem;
                 }
-
-                a {
-
-                }
             }
         }
-    }
-    section.about {
-
-    }
-    section.example {
-
-    }
-    section.contact {
-
-    }
-    section.home-page-footer {
-
     }
 }
 
@@ -65,24 +53,8 @@ div#home-page {
                     p.main-description {
                         text-align: center;
                     }
-    
-                    a {
-    
-                    }
                 }
             }
-        }
-        section.about {
-    
-        }
-        section.example {
-    
-        }
-        section.contact {
-    
-        }
-        section.home-page-footer {
-    
         }
     }
 }
@@ -94,32 +66,7 @@ div#home-page {
             
             main.home-page-main {
                width: 80%;
-
-                header.main-header {
-                }
-    
-                div.main-container {
-    
-                    p.main-description {
-                    }
-    
-                    a {
-    
-                    }
-                }
             }
-        }
-        section.about {
-    
-        }
-        section.example {
-    
-        }
-        section.contact {
-    
-        }
-        section.home-page-footer {
-    
         }
     }
 }
@@ -140,24 +87,8 @@ div#home-page {
                     p.main-description {
                         font-size: 0.9rem;
                     }
-    
-                    a {
-    
-                    }
                 }
             }
-        }
-        section.about {
-    
-        }
-        section.example {
-    
-        }
-        section.contact {
-    
-        }
-        section.home-page-footer {
-    
         }
     }
 }

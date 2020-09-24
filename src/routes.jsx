@@ -10,7 +10,7 @@ import Exercises from './pages/Learn/Exercises';
 import GreaterLessEqual from './pages/Learn/Exercises/GreaterLessEqual';
 
 const Routes = () => (
-  <BrowserRouter>
+  <BrowserRouter basename="nautilus-calculus">
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/create-account" component={CreateAccount} />

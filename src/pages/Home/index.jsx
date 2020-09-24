@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 import Navbar from '../../components/Navbar';
@@ -17,7 +16,7 @@ function Home() {
   return (
     <div id="home-page">
       <Helmet>
-        <title>Nautilus Calculus</title>
+        <title>Nautilus Calculus • Aprenda matemática de forma fácil</title>
       </Helmet>
       <header className="home-page-header">
         <Navbar />

@@ -1,0 +1,87 @@
+@import '../../assets/styles/main';
+
+div#not-found {
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    @include flex(column);
+    box-sizing: border-box;
+
+    main.not-found-content {
+        background: $dark-grey;
+        text-align: center;
+        max-width: 25rem;
+        padding: 5rem;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+
+        .big-number {
+            font-size: 8rem;
+
+            span.blue-caracter {
+                color: $light-blue;
+                background: -webkit-linear-gradient($blue-green, $semi-dark-blue);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .subtitle {
+            font-size: 2rem;
+            margin-bottom: 1.3rem;
+        }
+
+        .description {
+            font-size: 1rem;
+            font-weight: 300;
+            margin-bottom: 1.3rem;
+            line-height: 1.5rem;
+        }
+    }
+}
+
+@media(max-width: 630px) {
+    div#not-found {
+
+        main.not-found-content {
+            @include flex(column);
+            max-width: 100vw;
+            height: 100vh;
+            padding: 3rem;
+            border-radius: 0px;
+            -webkit-border-radius: 0px;
+            -moz-border-radius: 0px;
+            -ms-border-radius: 0px;
+            -o-border-radius: 0px;
+            box-sizing: border-box;
+        }
+    }
+}
+
+@media(max-width: 425px) {
+    div#not-found {
+        
+        main.not-found-content {
+
+            .subtitle {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media(max-width: 365px) {
+    div#not-found {
+        
+        main.not-found-content {
+
+            .btn {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
