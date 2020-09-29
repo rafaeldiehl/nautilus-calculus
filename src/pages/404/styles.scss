@@ -13,11 +13,20 @@ div#not-found {
         text-align: center;
         max-width: 25rem;
         padding: 5rem;
-        border-radius: 15px;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        -ms-border-radius: 15px;
-        -o-border-radius: 15px;
+        border-top: solid;
+        border-image-slice: 1;
+        border-width: 6px;
+        border-image-source: linear-gradient(to right, $blue-green, $semi-dark-blue);
+        border-radius: 0 0 15px 15px;
+        transition: margin-top .2s;
+        -webkit-transition: margin-top .2s;
+        -moz-transition: margin-top .2s;
+        -ms-transition: margin-top .2s;
+        -o-transition: margin-top .2s;
+        -webkit-border-radius: 0 0 15px 15px;
+        -moz-border-radius: 0 0 15px 15px;
+        -ms-border-radius: 0 0 15px 15px;
+        -o-border-radius: 0 0 15px 15px;
 
         .big-number {
             font-size: 8rem;
@@ -58,6 +67,7 @@ div#not-found {
             -ms-border-radius: 0px;
             -o-border-radius: 0px;
             box-sizing: border-box;
+            border-top: none;
         }
     }
 }

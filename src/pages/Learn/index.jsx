@@ -1,8 +1,16 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
+
+import Quiz from '../../components/Quiz';
 
 function Learn() {
   return (
-    <h1>Hello World!</h1>
+    <div id="learn-page">
+      <Helmet>
+        <title>Nautilus Calculus • Primeiro aprendizado</title>
+      </Helmet>
+      <Quiz />
+    </div>
   );
 }
 

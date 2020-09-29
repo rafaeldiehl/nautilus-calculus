@@ -1,0 +1,35 @@
+@import '../../assets/styles/main';
+
+.card {
+    height: 100vh;
+    @include flex(column);
+    color: white;
+
+    &:nth-child(odd) { background: $dark-grey; }
+    &:nth-child(even) { background: lighten($dark-grey, 1.9); }
+
+    .question {
+        margin: 2rem 0;
+    }
+
+    .answers {
+        button {
+            cursor: pointer;
+            margin: 0 0.3rem;
+            background: none;
+            border: 2px solid white;
+            color: white;
+            width: 10rem;
+            height: 5rem;
+            border-radius: 9px;
+            -webkit-border-radius: 9px;
+            -moz-border-radius: 9px;
+            -ms-border-radius: 9px;
+            -o-border-radius: 9px;
+
+            &:hover {
+                background: #fff1;
+            }
+        }
+    }
+}
