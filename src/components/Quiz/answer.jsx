@@ -19,7 +19,11 @@ class Answer extends Component {
           {
             this.state.clickCheck
               ? this.state.Answers.map((ans) => <button onClick={this.onAnswer}>{ans}</button>)
-              : <button>{this.state.rightAnswer}</button>
+              : this.state.Answers.map((ans) => {
+                if (ans == this.state.rightAnswer) {
+                  return (<button className="right">{ans}</button>);
+                } return (<button className="wrong">{ans}</button>);
+              })
           }
         </>
       );

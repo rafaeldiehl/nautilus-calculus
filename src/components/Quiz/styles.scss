@@ -9,7 +9,11 @@
     &:nth-child(even) { background: lighten($dark-grey, 1.9); }
 
     .question {
-        margin: 2rem 0;
+        margin: 1.3rem 0 2rem;
+    }
+
+    .questionImage {
+        width: 30rem;
     }
 
     .answers {
@@ -30,6 +34,53 @@
             &:hover {
                 background: #fff1;
             }
+        }
+
+        .right, .wrong {
+            cursor: auto;
+        }
+
+        .right {
+            background: $gradient;
+            border: none;
+
+            &:hover {
+                background: $gradient;
+            }
+        }
+
+        .wrong {
+            &:hover {
+                background: none;
+            }
+        }
+    }
+}
+
+@media(max-width: 780px) {
+    .card {
+        .question {
+            margin: 1.3rem 0 2rem;
+        }
+    
+        .questionImage {
+            width: 60vw;
+        }
+    
+        .answers {
+            button {
+                margin: 0.3rem 0.3rem 0.3rem 0.6rem;
+                width: 45vw;
+                height: 13vh;
+            }
+        }
+    }
+}
+
+@media(max-width: 580px) {
+    .card {
+        .questionImage {
+            width: 85vw;
         }
     }
 }

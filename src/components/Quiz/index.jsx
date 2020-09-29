@@ -28,7 +28,7 @@ class Quiz extends Component {
                   console.log(data);
                   return (
                     <div key={data.id} className="card">
-                      <img src={data.image} />
+                      <img className="questionImage" src={data.image} alt={data.imageDescription} />
                       <p className="question">{data.quiz}</p>
                       <div className="answers">
                         <Answer key={data.id} rightAnswer={data.rightAnswer} answer={data.findAnswer} />
