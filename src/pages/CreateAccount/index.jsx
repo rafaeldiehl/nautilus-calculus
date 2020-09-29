@@ -1,8 +1,13 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 function CreateAccount() {
   return (
-    <h1>Hello World!</h1>
+    <div id="create-account">
+      <Helmet>
+        <title>Nautilus Calculus • Criar Conta</title>
+      </Helmet>
+    </div>
   );
 }
 
