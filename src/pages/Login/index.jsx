@@ -28,6 +28,7 @@ function Login() {
             <input name="name" type="text" placeholder="Nome de usuário" />
             <input name="password" type="password" placeholder="Senha" />
             <Button name="Entrar" />
+            <a href="#" className="forgotPassword">Esqueci minha senha</a>
           </form>
         </div>
       </div>
