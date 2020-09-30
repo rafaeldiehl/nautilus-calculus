@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Model from '../../assets/images/model.jpg';
 
 const Data = [
@@ -7,7 +5,7 @@ const Data = [
     id: 1,
     image: Model,
     imageDescription: 'Lorem ipsum dolor sit amet',
-    quiz: 'Qual a soma da quantia acima?',
+    question: 'Qual a soma da quantia acima?',
     findAnswer: ['R$ 2,00', 'R$ 4,00', 'R$ 5,00', 'R$ 6,00'],
     rightAnswer: 'R$ 5,00',
   },
@@ -15,7 +13,7 @@ const Data = [
     id: 2,
     image: Model,
     imageDescription: 'Lorem ipsum dolor sit amet',
-    quiz: 'Lorem ipsum dolor sit amet?',
+    question: 'Qual a soma da quantia acima?',
     findAnswer: ['R$ 2,00', 'R$ 4,00', 'R$ 5,00', 'R$ 6,00'],
     rightAnswer: 'R$ 5,00',
   },
@@ -23,7 +21,7 @@ const Data = [
     id: 3,
     image: Model,
     imageDescription: 'Lorem ipsum dolor sit amet',
-    quiz: 'Lorem ipsum dolor sit amet?',
+    question: 'Qual a soma da quantia acima?',
     findAnswer: ['R$ 2,00', 'R$ 4,00', 'R$ 5,00', 'R$ 6,00'],
     rightAnswer: 'R$ 5,00',
   },
@@ -31,7 +29,7 @@ const Data = [
     id: 4,
     image: Model,
     imageDescription: 'Lorem ipsum dolor sit amet',
-    quiz: 'Lorem ipsum dolor sit amet?',
+    question: 'Qual a soma da quantia acima?',
     findAnswer: ['R$ 2,00', 'R$ 4,00', 'R$ 5,00', 'R$ 6,00'],
     rightAnswer: 'R$ 5,00',
   },
@@ -39,7 +37,7 @@ const Data = [
     id: 5,
     image: Model,
     imageDescription: 'Lorem ipsum dolor sit amet',
-    quiz: 'Lorem ipsum dolor sit amet?',
+    question: 'Qual a soma da quantia acima?',
     findAnswer: ['R$ 2,00', 'R$ 4,00', 'R$ 5,00', 'R$ 6,00'],
     rightAnswer: 'R$ 5,00',
   },

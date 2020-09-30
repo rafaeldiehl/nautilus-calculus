@@ -6,14 +6,38 @@
     color: white;
 
     &:nth-child(odd) { background: $dark-grey; }
-    &:nth-child(even) { background: lighten($dark-grey, 1.9); }
+    &:nth-child(even) { background: lighten($dark-grey, 5); }
 
     .question {
         margin: 1.3rem 0 2rem;
     }
 
+    .questionNumber {
+        margin-bottom: 0.8rem;
+        font-size: 0.9rem;
+        color: $blue;
+    }
+
     .questionImage {
         width: 30rem;
+    }
+
+    .next {
+        font-size: 1rem;
+        margin-top: 1.8rem;
+        padding: 0.6rem 1.5rem;
+        background: $semi-dark-blue;
+        color: white;
+        border: none;
+        border-radius: 9px;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        -ms-border-radius: 9px;
+        -o-border-radius: 9px;
+
+        &:hover {
+            background: lighten($semi-dark-blue, 3)
+        }
     }
 
     .answers {
@@ -36,22 +60,12 @@
             }
         }
 
-        .right, .wrong {
-            cursor: auto;
-        }
-
-        .right {
+        .selected {
             background: $gradient;
             border: none;
 
             &:hover {
                 background: $gradient;
-            }
-        }
-
-        .wrong {
-            &:hover {
-                background: none;
             }
         }
     }
