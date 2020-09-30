@@ -19,15 +19,12 @@ function Login() {
   function changeType() {
     const eye = document.querySelectorAll('.eye')[0];
     const passwordContent = document.getElementsByName('password')[0];
-
-    eye.addEventListener('click', () => {
-      eye.classList.toggle('active');
-      if (passwordContent.type == 'password') {
-        passwordContent.setAttribute('type', 'text');
-      } else {
-        passwordContent.setAttribute('type', 'password');
-      }
-    });
+    eye.classList.toggle('active');
+    if (passwordContent.type == 'password') {
+      passwordContent.setAttribute('type', 'text');
+    } else {
+      passwordContent.setAttribute('type', 'password');
+    }
   }
   return (
     <div id="login" style={mainBackground}>
