@@ -1,7 +1,6 @@
 <div align="center">
 <h1><img src="./src/assets/images/logoColorful.png" alt="Proffy" width="280"></h1>
 <h3>Aprenda matemática de forma fácil</h3>
-<hr>
 
 <p align="center">
 
@@ -14,8 +13,9 @@
 <a href="https://github.com/rafaeldiehl/proffy/commits/master">
 <img alt="Last commit" src="https://img.shields.io/github/last-commit/rafaeldiehl/proffy?color=0e8ccc">
 </a>
-
 </p>
+
+<p>
 
 # :shell: Sobre
 
