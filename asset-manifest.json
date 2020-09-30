@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nautilus-calculus/static/css/main.b1ce12ef.chunk.css",
+    "main.css": "/nautilus-calculus/static/css/main.4bc5b0a5.chunk.css",
     "main.js": "/nautilus-calculus/static/js/main.e6a8392c.chunk.js",
     "main.js.map": "/nautilus-calculus/static/js/main.e6a8392c.chunk.js.map",
     "runtime-main.js": "/nautilus-calculus/static/js/runtime-main.eb4a3c92.js",
@@ -8,9 +8,9 @@
     "static/js/2.d0ca699f.chunk.js": "/nautilus-calculus/static/js/2.d0ca699f.chunk.js",
     "static/js/2.d0ca699f.chunk.js.map": "/nautilus-calculus/static/js/2.d0ca699f.chunk.js.map",
     "index.html": "/nautilus-calculus/index.html",
-    "precache-manifest.f0a3b2f36b0c8b8b03875ca3405fc05f.js": "/nautilus-calculus/precache-manifest.f0a3b2f36b0c8b8b03875ca3405fc05f.js",
+    "precache-manifest.37ff8d5d998672c364dbad670ed73231.js": "/nautilus-calculus/precache-manifest.37ff8d5d998672c364dbad670ed73231.js",
     "service-worker.js": "/nautilus-calculus/service-worker.js",
-    "static/css/main.b1ce12ef.chunk.css.map": "/nautilus-calculus/static/css/main.b1ce12ef.chunk.css.map",
+    "static/css/main.4bc5b0a5.chunk.css.map": "/nautilus-calculus/static/css/main.4bc5b0a5.chunk.css.map",
     "static/js/2.d0ca699f.chunk.js.LICENSE.txt": "/nautilus-calculus/static/js/2.d0ca699f.chunk.js.LICENSE.txt",
     "static/media/homePageBackground.jpg": "/nautilus-calculus/static/media/homePageBackground.bba83a21.jpg",
     "static/media/loginPerson.png": "/nautilus-calculus/static/media/loginPerson.55d09f65.png",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.eb4a3c92.js",
     "static/js/2.d0ca699f.chunk.js",
-    "static/css/main.b1ce12ef.chunk.css",
+    "static/css/main.4bc5b0a5.chunk.css",
     "static/js/main.e6a8392c.chunk.js"
   ]
 }
