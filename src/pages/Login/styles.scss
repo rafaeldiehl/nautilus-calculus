@@ -9,13 +9,41 @@ div#login {
     .form-container {
         background: $dark-grey;
         color: white;
-        border-radius: 0 0 15px 15px;
-        -webkit-border-radius: 0 0 15px 15px;
-        -moz-border-radius: 0 0 15px 15px;
-        -ms-border-radius: 0 0 15px 15px;
-        -o-border-radius: 0 0 15px 15px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
         display: flex;
         flex-direction: column;
+        width: 25rem;
+        padding-bottom: 1.3rem;
+
+        .form-header {
+            @include flex(column);
+            padding-top: 2rem;
+
+            img.logo {
+                max-width: 9rem;
+                margin-bottom: 1.5rem;
+            }
+
+            img.picture {
+                max-width: 15rem;
+            }
+
+            h3 {
+                font-size: 1.3rem;
+                margin-top: 1rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+                color: $grey-green;
+                margin-top: 0.5rem;
+                margin-bottom: 1rem;
+            }
+        }
 
         .options {
             width: 100%;
@@ -43,7 +71,7 @@ div#login {
         }
 
         .login-form {
-            padding: 4rem 3rem;
+            padding: 0.5rem 3rem;
             box-sizing: border-box;
             height: 100%;
             width: 100%;
@@ -51,31 +79,123 @@ div#login {
 
             form {
                 @include flex(column);
+                position: relative;
 
                 input {
-                    margin: 0 0 2rem;
+                    margin: 0.5rem 0.5rem 1rem;
                     color: white;
-                    font-size: 1rem;
-                    width: 20rem;
-                    padding: 0.6rem;
+                    font-size: 0.9rem;
+                    width: 15rem;
+                    padding: 0.5rem;
                     background: none;
                     border: none;
                     outline: none;
-                    border-bottom: 1.3px solid lighten($grey, 12);
+                    border-bottom: 1.3px solid darken($grey-green, 9);
+
+                    &:focus, &:valid {
+                        border-color: #20c7a0;
+                    }
+                }
+
+                label {
+                    position: absolute;
+                    left: 0;
+                    span {
+                        font-size: 0.9rem;
+                        color: $grey-green;
+                    }
+                }
+
+                label[for="name"] {
+                    top: 0.6rem;
+                    left: 1rem;
+                }
+
+                label[for="password"] {
+                    top: 4.3rem;
+                    left: 1rem;
+                }
+
+                input:focus + label[for="name"], input:valid + label[for="name"] {
+                    transform: translateX(-9%) translateY(-90%);
+                    -webkit-transform: translateX(-9%) translateY(-90%);
+                    -moz-transform: translateX(-9%) translateY(-90%);
+                    -ms-transform: translateX(-9%) translateY(-90%);
+                    -o-transform: translateX(-9%) translateY(-90%);
+                    transition: .6s;
+                    -webkit-transition: .6s;
+                    -moz-transition: .6s;
+                    -ms-transition: .6s;
+                    -o-transition: .6s;
+                    span {
+                        font-size: 0.7rem;
+                        color: #20c7a0;
+                    }
+                }
+
+                input:required {
+                    box-shadow: none;
+                }
+
+                .person {
+                    position: absolute;
+                    right: 1rem;
+                    top: 1rem;
+                    color: $grey-green;
+                }
+
+                input:focus + svg.person {
+                    color:#20c7a0;
+                }
+
+                input:focus + label[for="password"], input:valid + label[for="password"] {
+                    transform: translateX(-20%) translateY(-90%);
+                    -webkit-transform: translateX(-20%) translateY(-90%);
+                    -moz-transform: translateX(-20%) translateY(-90%);
+                    -ms-transform: translateX(-20%) translateY(-90%);
+                    -o-transform: translateX(-20%) translateY(-90%);
+                    transition: .6s;
+                    -webkit-transition: .6s;
+                    -moz-transition: .6s;
+                    -ms-transition: .6s;
+                    -o-transition: .6s;
+                    span {
+                        font-size: 0.7rem;
+                        color: #20c7a0;
+                    }
                 }
 
                 button {
                     width: 10rem;
+                    margin-top: 1rem;
                 }
 
-                .forgotPassword {
-                    margin-top: 2rem;
+                .smallLink {
                     font-size: 0.8rem;
-                    color: #779;
+                    margin: 0.3rem;
 
-                    &:hover {
-                        text-decoration: underline;
+                    a {
+                        color: $grey-green;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
                     }
+                }
+
+                .forgot {
+                    margin-top: 1.5rem;
+                }
+
+                .eye {
+                    position: absolute;
+                    right: 1rem;
+                    top: 4.6rem;
+                    color: $grey-green;
+                }
+
+                .active {
+                    color: white;
                 }
             }
         }
@@ -84,7 +204,11 @@ div#login {
 
 @media(max-width: 500px) {
     div#login {
+        background: $dark-grey;
+        background-size: cover;
+        
         .form-container {
+            background: $dark-grey;
             height: 100vh;
             width: 100vw;
             border-radius: 0;
@@ -93,22 +217,17 @@ div#login {
             -ms-border-radius: 0;
             -o-border-radius: 0;
 
+            .form-header {
+                margin-bottom: -1rem;
+            }
+
             .login-form {
                 form {
-                    input {
-                        font-size: 1.3rem;
-                        margin: 0 0 2.5rem;
-                    }
                     button {
-                        font-size: 1.3rem;
-                        width: 15rem;
-                    }
-                    .forgotPassword {
-                        margin-top: 3.5rem;
-                        font-size: 1rem;
+                        margin-top: 2rem;
                     }
                 }
-            }   
+            }
         }
     }
 }

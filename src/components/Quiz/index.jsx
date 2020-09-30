@@ -116,7 +116,7 @@ class Quiz extends Component {
           {currentQuestion < Data.length - 1
             && <button disabled={disabled} className={`next ${disabled === true ? 'disabled' : null}`} onClick={this.nextQuestionHandler}>Próximo</button>}
           {currentQuestion === Data.length - 1
-            && <button className="finish" onClick={this.finishHandler}>Finalizar</button>}
+            && <button className={`finish ${disabled === true ? 'disabled' : null}`} onClick={this.finishHandler}>Finalizar</button>}
         </div>
       );
     }
