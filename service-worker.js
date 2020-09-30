@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/nautilus-calculus/precache-manifest.37ff8d5d998672c364dbad670ed73231.js"
+  "/nautilus-calculus/precache-manifest.a7a9461501f92697ff1b6f2ff63a9faa.js"
 );
 
 self.addEventListener('message', (event) => {
