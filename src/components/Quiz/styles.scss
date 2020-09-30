@@ -22,11 +22,10 @@
         width: 30rem;
     }
 
-    .next {
+    .next, .finish {
         font-size: 1rem;
         margin-top: 1.8rem;
         padding: 0.6rem 1.5rem;
-        background: $semi-dark-blue;
         color: white;
         border: none;
         border-radius: 9px;
@@ -34,9 +33,29 @@
         -moz-border-radius: 9px;
         -ms-border-radius: 9px;
         -o-border-radius: 9px;
+    }
+
+    .next {
+        background: $semi-dark-blue;
 
         &:hover {
             background: lighten($semi-dark-blue, 3)
+        }
+    }
+
+    .finish {
+        background: $blue-green;
+
+        &:hover {
+            background: lighten($blue-green, 3)
+        }
+    }
+
+    .disabled {
+        background: lighten($grey, 3);
+
+        &:hover {
+            background: lighten($grey, 3);
         }
     }
 
