@@ -107,25 +107,18 @@ class Quiz extends Component {
               {' '}
               <span className="colorful">{Data.length}</span>
             </p>
-            { score <= (Data.length / 2)
-            && (
-            <>
-              <h1>Oops, não foi dessa vez!</h1>
-              <p>Parece que você não acertou muitas questões. Mas não desista, tente novamente!</p>
-            </>
-            ) }
-            { score > (Data.length / 2) && score < Data.length && (
-            <>
-              <h1>Legal, mandou bem!</h1>
-              <p>Você acertou várias questões, mas pode melhorar ainda mais. Continue tentando!</p>
-            </>
-            ) }
-            { score == Data.length && (
-            <>
-              <h1>Uau, você é bom mesmo!</h1>
-              <p>Você acertou todas as questões! Parabéns pelo seu ótimo desempenho.</p>
-            </>
-            ) }
+            <div className="scoreDescription">
+              <h1 className="scoreTitle">
+                { score <= 2 && 'Oops, não foi dessa vez!' }
+                { score > (Data.length / 2) && score < Data.length && 'Legal, mandou bem!' }
+                { score == Data.length && 'Uau, você é bom mesmo!' }
+              </h1>
+              <p className="scoreSubtitle">
+                { score <= 2 && <span className="red">Parece que você não acertou muitas questões. Não desista, tente novamente!</span> }
+                { score > (Data.length / 2) && score < Data.length && <span className="yellow">Você acertou várias questões, mas pode melhorar ainda mais. Continue tentando!</span> }
+                { score == Data.length && <span className="green">Você acertou todas as questões! Parabéns pelo seu ótimo desempenho.</span> }
+              </p>
+            </div>
             <Link class="returnHome" to="/">
               <MdKeyboardReturn className="iconReturn" size="1rem" />
               {' '}

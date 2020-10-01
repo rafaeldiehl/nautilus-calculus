@@ -142,6 +142,26 @@
         width: 10.5rem;
         text-transform: uppercase;
     }
+
+    .scoreDescription {
+        text-align: center;
+
+        .scoreSubtitle {
+            font-size: 1rem;
+
+            .green {
+                color: $blue-green;
+            }
+
+            .yellow {
+                color: #eced72;
+            }
+
+            .red {
+                color: #ec7372;
+            }
+        }
+    }
 }
 
 @media(max-width: 780px) {
