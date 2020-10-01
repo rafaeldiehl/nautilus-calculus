@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "06ace9cc9e5438ebb891c9dec711a658",
+    "revision": "d2141dff3bb00ed089e40a053cb6375a",
     "url": "/nautilus-calculus/index.html"
   },
   {
-    "revision": "584a29deb8279cb4eb8b",
-    "url": "/nautilus-calculus/static/css/main.655d3954.chunk.css"
+    "revision": "678e3dcd2e23ae2a24b5",
+    "url": "/nautilus-calculus/static/css/main.1323e4ed.chunk.css"
   },
   {
-    "revision": "52705b41a1135ffa36c4",
-    "url": "/nautilus-calculus/static/js/2.d0ca699f.chunk.js"
+    "revision": "6709d3a7d136536d7c9e",
+    "url": "/nautilus-calculus/static/js/2.40b91526.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/nautilus-calculus/static/js/2.d0ca699f.chunk.js.LICENSE.txt"
+    "url": "/nautilus-calculus/static/js/2.40b91526.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "584a29deb8279cb4eb8b",
-    "url": "/nautilus-calculus/static/js/main.e6a8392c.chunk.js"
+    "revision": "678e3dcd2e23ae2a24b5",
+    "url": "/nautilus-calculus/static/js/main.67f649ac.chunk.js"
   },
   {
     "revision": "a6db1a8fc6ae12278013",
@@ -42,5 +42,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c95c6b8440ba2d379d024ae68d2201f4",
     "url": "/nautilus-calculus/static/media/pageNotFoundBackground.c95c6b84.jpg"
+  },
+  {
+    "revision": "bb52dbd7a27e1452f6fab91bf6729fd6",
+    "url": "/nautilus-calculus/static/media/peopleLamp.bb52dbd7.jpg"
   }
 ]);

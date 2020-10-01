@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/nautilus-calculus/static/css/main.655d3954.chunk.css",
-    "main.js": "/nautilus-calculus/static/js/main.e6a8392c.chunk.js",
-    "main.js.map": "/nautilus-calculus/static/js/main.e6a8392c.chunk.js.map",
+    "main.css": "/nautilus-calculus/static/css/main.1323e4ed.chunk.css",
+    "main.js": "/nautilus-calculus/static/js/main.67f649ac.chunk.js",
+    "main.js.map": "/nautilus-calculus/static/js/main.67f649ac.chunk.js.map",
     "runtime-main.js": "/nautilus-calculus/static/js/runtime-main.eb4a3c92.js",
     "runtime-main.js.map": "/nautilus-calculus/static/js/runtime-main.eb4a3c92.js.map",
-    "static/js/2.d0ca699f.chunk.js": "/nautilus-calculus/static/js/2.d0ca699f.chunk.js",
-    "static/js/2.d0ca699f.chunk.js.map": "/nautilus-calculus/static/js/2.d0ca699f.chunk.js.map",
+    "static/js/2.40b91526.chunk.js": "/nautilus-calculus/static/js/2.40b91526.chunk.js",
+    "static/js/2.40b91526.chunk.js.map": "/nautilus-calculus/static/js/2.40b91526.chunk.js.map",
     "index.html": "/nautilus-calculus/index.html",
-    "precache-manifest.a7a9461501f92697ff1b6f2ff63a9faa.js": "/nautilus-calculus/precache-manifest.a7a9461501f92697ff1b6f2ff63a9faa.js",
+    "precache-manifest.43d13b6042f731b1c929b9c13ad9dc16.js": "/nautilus-calculus/precache-manifest.43d13b6042f731b1c929b9c13ad9dc16.js",
     "service-worker.js": "/nautilus-calculus/service-worker.js",
-    "static/css/main.655d3954.chunk.css.map": "/nautilus-calculus/static/css/main.655d3954.chunk.css.map",
-    "static/js/2.d0ca699f.chunk.js.LICENSE.txt": "/nautilus-calculus/static/js/2.d0ca699f.chunk.js.LICENSE.txt",
+    "static/css/main.1323e4ed.chunk.css.map": "/nautilus-calculus/static/css/main.1323e4ed.chunk.css.map",
+    "static/js/2.40b91526.chunk.js.LICENSE.txt": "/nautilus-calculus/static/js/2.40b91526.chunk.js.LICENSE.txt",
     "static/media/homePageBackground.jpg": "/nautilus-calculus/static/media/homePageBackground.bba83a21.jpg",
     "static/media/loginPerson.png": "/nautilus-calculus/static/media/loginPerson.55d09f65.png",
     "static/media/logoMedium.png": "/nautilus-calculus/static/media/logoMedium.4b51ec69.png",
     "static/media/model.jpg": "/nautilus-calculus/static/media/model.b0a06c85.jpg",
-    "static/media/pageNotFoundBackground.jpg": "/nautilus-calculus/static/media/pageNotFoundBackground.c95c6b84.jpg"
+    "static/media/pageNotFoundBackground.jpg": "/nautilus-calculus/static/media/pageNotFoundBackground.c95c6b84.jpg",
+    "static/media/peopleLamp.jpg": "/nautilus-calculus/static/media/peopleLamp.bb52dbd7.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.eb4a3c92.js",
-    "static/js/2.d0ca699f.chunk.js",
-    "static/css/main.655d3954.chunk.css",
-    "static/js/main.e6a8392c.chunk.js"
+    "static/js/2.40b91526.chunk.js",
+    "static/css/main.1323e4ed.chunk.css",
+    "static/js/main.67f649ac.chunk.js"
   ]
 }
