@@ -116,6 +116,8 @@
 
     .score {
         color: lighten($grey, 45);
+        font-size: 1.2rem;
+        margin-top: 0.4rem;
 
         .colorful {
             color: $blue;
@@ -132,25 +134,45 @@
     .returnHome {
         width: 13.5rem;
         font-size: 1rem;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     .new {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         font-weight: 500;
         letter-spacing: 0.1rem;
         color: $blue;
-        width: 10.5rem;
+        width: 9.2rem;
         text-transform: uppercase;
+
+        &:hover {
+            color: lighten($blue, 10);
+        }
+    }
+
+    .illustration {
+        width: 40rem;
     }
 
     .scoreDescription {
         text-align: center;
 
+        .scoreTitle {
+            padding: 0 1rem;
+        }
+
         .scoreSubtitle {
             font-size: 1rem;
+            padding: 0 2.3rem;
+            line-height: 1.3rem;
+            box-sizing: border-box;
+            margin: 0.3rem 0 1rem;
 
             .green {
-                color: $blue-green;
+                color: lighten($blue-green, 5);
             }
 
             .yellow {
@@ -166,6 +188,10 @@
 
 @media(max-width: 780px) {
     .card {
+        padding: 1.5rem 0;
+        box-sizing: border-box;
+        height: 108vh;
+
         .question {
             margin: 1.3rem 0 2rem;
         }
@@ -183,6 +209,25 @@
                 margin: 0.3rem 0.3rem 0.6rem 0.6rem;
                 width: 45vw;
                 height: 13vh;
+            }
+        }
+
+        .next, .finish {
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media(max-width: 650px) {
+    .card {
+        .illustration {
+            width: 97vw;
+            margin: 1rem 0;
+        }
+
+        .scoreDescription {
+            .scoreSubtitle {
+                font-size: 0.8rem;
             }
         }
     }

@@ -18,10 +18,12 @@ div#login {
         flex-direction: column;
         width: 25rem;
         padding-bottom: 1.3rem;
+        box-sizing: border-box;
 
         .form-header {
             @include flex(column);
             padding-top: 2rem;
+            box-sizing: border-box;
 
             img.logo {
                 max-width: 9rem;
@@ -76,6 +78,7 @@ div#login {
             height: 100%;
             width: 100%;
             @include flex(column);
+            box-sizing: border-box;
 
             form {
                 @include flex(column);
@@ -91,6 +94,7 @@ div#login {
                     border: none;
                     outline: none;
                     border-bottom: 1.3px solid darken($grey-green, 9);
+                    box-sizing: border-box;
 
                     &:focus, &:valid {
                         border-color: #20c7a0;
@@ -208,8 +212,9 @@ div#login {
         background-size: cover;
         
         .form-container {
+            padding-top: 1.5rem;
             background: $dark-grey;
-            height: 100vh;
+            height: 110vh;
             width: 100vw;
             border-radius: 0;
             -webkit-border-radius: 0;
@@ -223,8 +228,9 @@ div#login {
 
             .login-form {
                 form {
+                    margin-top: 0.5rem;
                     button {
-                        margin-top: 2rem;
+                        margin-top: 1.5rem;
                     }
                 }
             }

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 import { MdHighlightOff, MdKeyboardReturn, MdAutorenew } from 'react-icons/md';
 
+import Illustration from '../../assets/images/peopleLamp.jpg';
+
 import Data from './data';
 
 import './styles.scss';
@@ -94,7 +96,7 @@ class Quiz extends Component {
         return (
           <div className="card">
             <a className="new" href="/learn">
-              <MdAutorenew className="iconNew" size="1.3rem" />
+              <MdAutorenew className="iconNew" size="1rem" />
               {' '}
               Fazer novamente
             </a>
@@ -107,6 +109,7 @@ class Quiz extends Component {
               {' '}
               <span className="colorful">{Data.length}</span>
             </p>
+            <img src={Illustration} alt="Pessoas fazendo uma lâmpada funcionar" className="illustration" />
             <div className="scoreDescription">
               <h1 className="scoreTitle">
                 { score <= 2 && 'Oops, não foi dessa vez!' }
