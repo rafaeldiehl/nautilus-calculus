@@ -100,7 +100,7 @@
             background: lighten($grey, 2);
 
             &:hover {
-                background: #fff1;
+                background: darken($grey, 1);
             }
         }
 
