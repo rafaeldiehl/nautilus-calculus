@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
+import { MdHighlightOff, MdKeyboardReturn, MdAutorenew } from 'react-icons/md';
 
 import Data from './data';
 
@@ -87,20 +90,57 @@ class Quiz extends Component {
 
       if (quizEnd === true) {
         const { score } = this.state;
+
         return (
           <div className="card">
-            <h1>
-              GAME OVER! Sua pontuação é
+            <a className="new" href="/learn">
+              <MdAutorenew className="iconNew" size="1.3rem" />
               {' '}
-              {score}
-            </h1>
+              Fazer novamente
+            </a>
+            <p className="score">
+              Sua pontuação final é
+              {' '}
+              <span className="colorful">{score}</span>
+              {' '}
+              de
+              {' '}
+              <span className="colorful">{Data.length}</span>
+            </p>
+            { score <= (Data.length / 2)
+            && (
+            <>
+              <h1>Oops, não foi dessa vez!</h1>
+              <p>Parece que você não acertou muitas questões. Mas não desista, tente novamente!</p>
+            </>
+            ) }
+            { score > (Data.length / 2) && score < Data.length && (
+            <>
+              <h1>Legal, mandou bem!</h1>
+              <p>Você acertou várias questões, mas pode melhorar ainda mais. Continue tentando!</p>
+            </>
+            ) }
+            { score == Data.length && (
+            <>
+              <h1>Uau, você é bom mesmo!</h1>
+              <p>Você acertou todas as questões! Parabéns pelo seu ótimo desempenho.</p>
+            </>
+            ) }
+            <Link class="returnHome" to="/">
+              <MdKeyboardReturn className="iconReturn" size="1rem" />
+              {' '}
+              Retornar a página principal
+            </Link>
           </div>
         );
       }
 
       return (
         <div key={currentQuestion} className="card">
-          <p className="questionNumber">{`Questão ${currentQuestion + 1} de ${Data.length}`}</p>
+          <header className="quizHeader">
+            <p className="questionNumber">{`Questão ${currentQuestion + 1} de ${Data.length}`}</p>
+            <Link to="/"><MdHighlightOff className="icon" size="2rem" /></Link>
+          </header>
           <img className="questionImage" src={image} alt={imageDescription} />
           <p className="question">{question}</p>
           <div className="answers">
