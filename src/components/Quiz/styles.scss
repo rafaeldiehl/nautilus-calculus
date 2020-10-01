@@ -190,10 +190,13 @@
     .card {
         padding: 1.5rem 0;
         box-sizing: border-box;
-        height: 108vh;
+        height: 100vh;
 
         .question {
-            margin: 1.3rem 0 2rem;
+            margin: 1.3rem 1rem 2rem;
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 1.4rem;
         }
 
         .quizHeader {
