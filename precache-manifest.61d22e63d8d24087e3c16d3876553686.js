@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d2141dff3bb00ed089e40a053cb6375a",
+    "revision": "a4664d4e144a7bf6c05b124fceee4114",
     "url": "/nautilus-calculus/index.html"
   },
   {
-    "revision": "678e3dcd2e23ae2a24b5",
-    "url": "/nautilus-calculus/static/css/main.1323e4ed.chunk.css"
+    "revision": "cf5442e6c9c2e2fe9b94",
+    "url": "/nautilus-calculus/static/css/main.7c4c5390.chunk.css"
   },
   {
     "revision": "6709d3a7d136536d7c9e",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nautilus-calculus/static/js/2.40b91526.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "678e3dcd2e23ae2a24b5",
+    "revision": "cf5442e6c9c2e2fe9b94",
     "url": "/nautilus-calculus/static/js/main.67f649ac.chunk.js"
   },
   {
