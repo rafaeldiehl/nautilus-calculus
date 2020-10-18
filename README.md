@@ -16,36 +16,33 @@
 
 </div>
 
-# :shell: Sobre
+## Sobre
 
 Nautilus Calculus é um projeto de plataforma web educacional que visa auxiliar discalcúlicos no processo de ensino da disciplina de Matemática. Foi desenvolvido como TCC do Curso Técnico em Redes de Computadores, pelo [IFSP Campus Boituva](https://btv.ifsp.edu.br/).
 
-# :bulb: Tecnologias utilizadas
+## Tecnologias utilizadas
 - HTML
 - JavaScript
 - Sass
 - React
 
-## :computer: Rodando o projeto localmente
+## Rodando o projeto localmente
 
 Requisitos:
 - [Node.js](https://nodejs.org/en/)
 - [NPM](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
 
-Clone este repositório:
-```
-git clone https://github.com/rafaeldiehl/nautilus-calculus.git
-```
-Acesse o diretório:
-```
-cd nautilus-calculus
-```
-Instale as dependências:
-```
-npm install
-```
-Inicie o sistema:
-```
-npm start
+```bash
+# Clone este repositório
+$ git clone https://github.com/rafaeldiehl/nautilus-calculus.git
+
+# Acesse o diretório principal
+$ cd nautilus-calculus
+
+# Instale as dependências
+$ npm install
+
+# Inicie o sistema
+$ npm start
 ```
