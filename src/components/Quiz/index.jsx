@@ -115,15 +115,15 @@ class Quiz extends Component {
               <h1 className="scoreTitle">
                 { score <= 2 && 'Oops, não foi dessa vez!' }
                 { score > (dataQuestion.length / 2) && score < dataQuestion.length && 'Legal, mandou bem!' }
-                { score == dataQuestion.length && 'Uau, você é bom mesmo!' }
+                { score === dataQuestion.length && 'Uau, você é bom mesmo!' }
               </h1>
               <p className="scoreSubtitle">
                 { score <= 2 && <span className="red">Parece que você não acertou muitas questões. Não desista, tente novamente!</span> }
                 { score > (dataQuestion.length / 2) && score < dataQuestion.length && <span className="yellow">Você acertou várias questões, mas pode melhorar ainda mais. Continue tentando!</span> }
-                { score == dataQuestion.length && <span className="green">Você acertou todas as questões! Parabéns pelo seu ótimo desempenho.</span> }
+                { score === dataQuestion.length && <span className="green">Você acertou todas as questões! Parabéns pelo seu ótimo desempenho.</span> }
               </p>
             </div>
-            <Link class="returnHome" to="/">
+            <Link className="returnHome" to="/">
               <MdKeyboardReturn className="iconReturn" size="1rem" />
               {' '}
               Retornar a página principal

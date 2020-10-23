@@ -3,8 +3,6 @@ import { Helmet } from 'react-helmet';
 
 import Button from '../../components/Button';
 
-import Background from '../../assets/images/pageNotFoundBackground.jpg';
-
 import './styles.scss';
 
 function PageNotFound() {
