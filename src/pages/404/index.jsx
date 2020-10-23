@@ -7,13 +7,9 @@ import Background from '../../assets/images/pageNotFoundBackground.jpg';
 
 import './styles.scss';
 
-const pageBackground = {
-  backgroundImage: `url(${Background})`,
-};
-
 function PageNotFound() {
   return (
-    <div id="not-found" style={pageBackground}>
+    <div id="not-found">
       <Helmet>
         <title>Nautilus Calculus • Página não encontrada</title>
       </Helmet>

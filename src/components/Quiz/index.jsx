@@ -5,12 +5,13 @@ import { MdHighlightOff, MdKeyboardReturn, MdAutorenew } from 'react-icons/md';
 
 import Illustration from '../../assets/images/peopleLamp.jpg';
 
-import Data from './data';
+import api from './api';
 
 import './styles.scss';
 
 class Quiz extends Component {
     state = {
+      dataQuestion: [],
       userAnswer: null,
       currentQuestion: 0,
       options: [],
@@ -19,20 +20,19 @@ class Quiz extends Component {
       disabled: true,
     }
 
-    setStateFunction = () => {
-      const { currentQuestion } = this.state;
-      this.setState(() => ({
-        id: Data[currentQuestion].id,
-        image: Data[currentQuestion].image,
-        imageDescription: Data[currentQuestion].imageDescription,
-        question: Data[currentQuestion].question,
-        options: Data[currentQuestion].findAnswer,
-        answer: Data[currentQuestion].rightAnswer,
-      }));
-    }
-
-    componentDidMount() {
-      this.setStateFunction();
+    async componentDidMount() {
+        const response = await api.get(this.props.path);
+        const { currentQuestion } = this.state;
+        this.setState(() => ({ dataQuestion: response.data.question }));
+        const { dataQuestion } = this.state;
+        this.setState(() => ({
+          id: dataQuestion[currentQuestion].id,
+          image: dataQuestion[currentQuestion].image,
+          imageDescription: dataQuestion[currentQuestion].imageDescription,
+          question: dataQuestion[currentQuestion].question,
+          options: dataQuestion[currentQuestion].findAnswer,
+          answer: dataQuestion[currentQuestion].rightAnswer,
+        }));
     }
 
     nextQuestionHandler = () => {
@@ -51,14 +51,15 @@ class Quiz extends Component {
 
     componentDidUpdate(prevProps, prevState) {
       const { currentQuestion } = this.state;
+      const { dataQuestion } = this.state;
       if (this.state.currentQuestion !== prevState.currentQuestion) {
         this.setState(() => ({
           disabled: true,
-          image: Data[currentQuestion].image,
-          imageDescription: Data[currentQuestion].imageDescription,
-          question: Data[currentQuestion].question,
-          options: Data[currentQuestion].findAnswer,
-          answer: Data[currentQuestion].rightAnswer,
+          image: dataQuestion[currentQuestion].image,
+          imageDescription: dataQuestion[currentQuestion].imageDescription,
+          question: dataQuestion[currentQuestion].question,
+          options: dataQuestion[currentQuestion].findAnswer,
+          answer: dataQuestion[currentQuestion].rightAnswer,
         }));
       }
     }
@@ -71,8 +72,8 @@ class Quiz extends Component {
     }
 
     finishHandler = () => {
-      const { answer, userAnswer, score } = this.state;
-      if (this.state.currentQuestion === Data.length - 1) {
+      const { answer, userAnswer, score, dataQuestion } = this.state;
+      if (this.state.currentQuestion === dataQuestion.length - 1) {
         this.setState({
           quizEnd: true,
         });
@@ -87,7 +88,7 @@ class Quiz extends Component {
 
     render() {
       const {
-        currentQuestion, image, imageDescription, question, options, userAnswer, quizEnd, disabled,
+        dataQuestion, currentQuestion, image, imageDescription, question, options, userAnswer, quizEnd, disabled,
       } = this.state;
 
       if (quizEnd === true) {
@@ -107,19 +108,19 @@ class Quiz extends Component {
               {' '}
               de
               {' '}
-              <span className="colorful">{Data.length}</span>
+              <span className="colorful">{dataQuestion.length}</span>
             </p>
             <img src={Illustration} alt="Pessoas fazendo uma lâmpada funcionar" className="illustration" />
             <div className="scoreDescription">
               <h1 className="scoreTitle">
                 { score <= 2 && 'Oops, não foi dessa vez!' }
-                { score > (Data.length / 2) && score < Data.length && 'Legal, mandou bem!' }
-                { score == Data.length && 'Uau, você é bom mesmo!' }
+                { score > (dataQuestion.length / 2) && score < dataQuestion.length && 'Legal, mandou bem!' }
+                { score == dataQuestion.length && 'Uau, você é bom mesmo!' }
               </h1>
               <p className="scoreSubtitle">
                 { score <= 2 && <span className="red">Parece que você não acertou muitas questões. Não desista, tente novamente!</span> }
-                { score > (Data.length / 2) && score < Data.length && <span className="yellow">Você acertou várias questões, mas pode melhorar ainda mais. Continue tentando!</span> }
-                { score == Data.length && <span className="green">Você acertou todas as questões! Parabéns pelo seu ótimo desempenho.</span> }
+                { score > (dataQuestion.length / 2) && score < dataQuestion.length && <span className="yellow">Você acertou várias questões, mas pode melhorar ainda mais. Continue tentando!</span> }
+                { score == dataQuestion.length && <span className="green">Você acertou todas as questões! Parabéns pelo seu ótimo desempenho.</span> }
               </p>
             </div>
             <Link class="returnHome" to="/">
@@ -134,7 +135,7 @@ class Quiz extends Component {
       return (
         <div key={currentQuestion} className="card">
           <header className="quizHeader">
-            <p className="questionNumber">{`Questão ${currentQuestion + 1} de ${Data.length}`}</p>
+            <p className="questionNumber">{`Questão ${currentQuestion + 1} de ${dataQuestion.length}`}</p>
             <Link to="/"><MdHighlightOff className="icon" size="2rem" /></Link>
           </header>
           <img className="questionImage" src={image} alt={imageDescription} />
@@ -149,9 +150,9 @@ class Quiz extends Component {
               </button>
             ))}
           </div>
-          {currentQuestion < Data.length - 1
+          {currentQuestion < dataQuestion.length - 1
             && <button disabled={disabled} className={`next ${disabled === true ? 'disabled' : null}`} onClick={this.nextQuestionHandler}>Próximo</button>}
-          {currentQuestion === Data.length - 1
+          {currentQuestion === dataQuestion.length - 1
             && <button className={`finish ${disabled === true ? 'disabled' : null}`} onClick={this.finishHandler}>Finalizar</button>}
         </div>
       );

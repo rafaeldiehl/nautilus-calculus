@@ -1,6 +1,7 @@
 @import '../../assets/styles/main';
 
 div#not-found {
+    background-image: linear-gradient(to right, $semi-dark-blue, $blue-green);
     background-size: cover;
     color: white;
     height: 100vh;

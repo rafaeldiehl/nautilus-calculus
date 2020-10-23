@@ -3,17 +3,12 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { MdRemoveRedEye, MdPerson } from 'react-icons/md';
 
-import Background from '../../assets/images/homePageBackground.jpg';
 import Logo from '../../assets/images/logoMedium.png';
 import Picture from '../../assets/images/loginPerson.png';
 
 import Button from '../../components/Button';
 
 import './styles.scss';
-
-const mainBackground = {
-  backgroundImage: `url(${Background})`,
-};
 
 function Login() {
   function changeType() {
@@ -27,7 +22,7 @@ function Login() {
     }
   }
   return (
-    <div id="login" style={mainBackground}>
+    <div id="login">
       <Helmet>
         <title>Nautilus Calculus • Entrar</title>
       </Helmet>

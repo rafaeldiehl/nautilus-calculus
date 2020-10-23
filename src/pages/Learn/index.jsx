@@ -9,7 +9,7 @@ function Learn() {
       <Helmet>
         <title>Nautilus Calculus • Primeiro aprendizado</title>
       </Helmet>
-      <Quiz />
+      <Quiz path="exercises/money"/>
     </div>
   );
 }

@@ -1,8 +1,11 @@
 @import '../../assets/styles/main';
 
+$bg-image: url('../../assets/images/homePageBackground.jpg');
+
 div#login {
     height: 100vh;
     width: 100vw;
+    background-image: $bg-image;
     background-size: cover;
     @include flex(column);
 
@@ -214,7 +217,6 @@ div#login {
         .form-container {
             padding-top: 1.5rem;
             background: $dark-grey;
-            height: 110vh;
             width: 100vw;
             border-radius: 0;
             -webkit-border-radius: 0;
