@@ -43,6 +43,9 @@ $ cd nautilus-calculus
 # Instale as dependências
 $ npm install
 
-# Inicie o sistema
+# Inicie o cliente
 $ npm start
+
+# Em outro terminal, inicie o servidor
+$ npm run server
 ```
