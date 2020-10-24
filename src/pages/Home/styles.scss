@@ -17,16 +17,16 @@ div#home-page {
 
             header.main-header {
                 text-align: left;
-                font-size: 2.5rem;
-                line-height: 3.2rem;
+                font-size: calc(2rem + 1.25vw + 0.25vh);
+                line-height: 3.5rem;
             }
 
             div.main-container {
 
                 p.main-description {
-                    font-size: 1rem;
+                    font-size: calc(0.8rem + 0.25vw);
                     font-weight: 400;
-                    line-height: 1.5rem;
+                    line-height: calc(1.3rem + 0.6vw);
                     text-align: left;
                     margin: 1.6rem 0 2rem;
                 }
@@ -79,14 +79,9 @@ div#home-page {
             main.home-page-main {
 
                 header.main-header {
-                    font-size: 2.2rem;
-                }
-    
-                div.main-container {
-    
-                    p.main-description {
-                        font-size: 0.9rem;
-                    }
+                    font-size: 2rem;
+                    width: 90vw;
+                    line-height: 2.8rem;
                 }
             }
         }

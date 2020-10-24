@@ -1,11 +1,12 @@
 @import '../../assets/styles/main';
 
 button.btn {
+    position: relative;
     margin: 0;
     border: none;
     outline: none;
-    padding: 0.8rem 1.8rem;
-    font-size: 1.1rem;
+    font-size: calc(0.9rem + 0.325vw);
+    padding: calc(0.8rem + 0.325vw) 0;
     color: white;
     background: $gradient;
     border-radius: 7px;
@@ -14,14 +15,16 @@ button.btn {
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
 
+    a {
+        padding: calc(0.8rem + 0.325vw) calc(1.5rem + 0.325vw);
+    }
+
     &:hover {
-        &:hover {
-            background: linear-gradient(to right, darken($blue-green, 6%), darken($semi-dark-blue, 6%));
-            transition: .7s;
-            -webkit-transition: .7s;
-            -moz-transition: .7s;
-            -ms-transition: .7s;
-            -o-transition: .7s;
-        }
+        background: linear-gradient(to right, darken($blue-green, 6%), darken($semi-dark-blue, 6%));
+        transition: .7s;
+        -webkit-transition: .7s;
+        -moz-transition: .7s;
+        -ms-transition: .7s;
+        -o-transition: .7s;
     }
 }
