@@ -8,7 +8,6 @@
     "editor.fontLigatures": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Omni"
+    "workbench.iconTheme": "material-icon-theme"
 }
   
